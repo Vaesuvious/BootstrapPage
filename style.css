@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 576px){
+    p{
+        display: flex;
+    }
+
+    img{
+        height: 300px;
+        width:auto;
+    }
+}
+
+.form-group{
+    display: flex;
+    justify-content: start;
+}
+
+.container {
+    
+    color: whitesmoke;
+    width: 80%;
+    height: 80%;
+   
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+input:hover {
+    background-color: lightyellow;
+}
+
