@@ -1,30 +1,18 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MyBootstrapPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-
+ 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/slate/bootstrap.min.css"
@@ -32,90 +20,96 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    
   </head>
-
   <body class="pageBackground">
-    <div class="container">
-      <video autoplay loop muted plays-inline class="background-clip">
-        <source src="videos/ship-ocean-moon.mp4" type="video/mp4" />
-      </video>
 
-      <h1>My Bootstrap Page</h1>
-      <form class="form-inputs">
-        <div class="input-group form-group row">
-          <div class="input-group-prepend">
-            <label class="input-group-text bg-dark text-white"
-              >Full Name :</label
-            >
-            <input
-              type="text"
-              id="firstname"
-              class="form-control"
-              placeholder="First Name"
-            />
-            <input
-              type="text"
-              id="lastname"
-              class="form-control"
-              placeholder="Last Name"
+      <div class="container">
+        <div>
+          <video autoplay loop muted plays-inline class="background-clip">
+            <source src="videos/ship-ocean-moon.mp4" type="video/mp4" />
+          </video>
+        </div>
+  
+        <h1>My Bootstrap Page</h1>
+        <form class="form-inputs">
+          <div class="input-group form-group row">
+            <div class="input-group-prepend">
+              <label class="input-group-text bg-dark text-white"
+                >Full Name:</label
+              >
+              <input
+                type="text"
+                id="firstname"
+                class="form-control col-md-5 col-lg-3"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                id="lastname"
+                class="form-control col-md-5 col-lg-3"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+  
+          <div class="input-group form-group row">
+            <div class="input-group-prepend">
+              <label for="phonenum" class="input-group-text bg-dark text-white"
+                >Phone:</label
+              >
+              <input
+                type="text"
+                class="form-control col-sm-3 col-md-5 col-lg-3"
+                id="phonenum"
+                placeholder="(xxx)xxx-xxxx"
+              />
+            </div>
+          </div>
+  
+          <div class="input-group form-group row">
+            <div class="input-group-prepend">
+              <label for="e-mail" class="input-group-text bg-dark text-white"
+                >Email:</label
+              >
+              <input
+                type="email"
+                class="form-control col-sm-3 col-md-5 col-lg-3"
+                id="e-mail"
+                placeholder="example@email.com"
+              />
+            </div>
+          </div>
+  
+          <button class="btn btn-primary submit-btn">Submit</button>
+          <button class="btn btn-secondary cancel-btn">Cancel</button>
+        </form>
+  
+        <br />
+        <h2>About Me</h2>
+        <br />
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/394/436/889/xbox-xbox-one-console-gamepad-wallpaper-thumb.jpg"
             />
           </div>
-        </div>
-
-        <div class="input-group form-group row">
-          <div class="input-group-prepend">
-            <label for="phonenum" class="input-group-text bg-dark text-white"
-              >Phone :</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="phonenum"
-              placeholder="(xxx)xxx-xxxx"
-            />
+  
+          <div class="col-sm aboutMeText">
+            <p>
+              It all started long ago when I was first introduced to games. I
+              remember as if it was yesterday, I had gotten my first game system,
+              an xbox 360! The first game I played was "Sonic Free Riders", then
+              it was "Kinnect Adventures" (the console I got was a bundle so the
+              game came with it). Due to my fasination it led me to get a degree
+              in Game Development and through it my addiction for programming
+              grew. Now I'm in school to be a Software Developer!
+            </p>
           </div>
-        </div>
-
-        <div class="input-group form-group row">
-          <div class="input-group-prepend">
-            <label for="e-mail" class="input-group-text bg-dark text-white"
-              >Email :</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="e-mail"
-              placeholder="example@email.com"
-            />
-          </div>
-        </div>
-
-        <button class="btn btn-primary submit-btn">Submit</button>
-        <button class="btn btn-secondary cancel-btn">Cancel</button>
-      </form>
-
-      <br />
-      <h2>About Me</h2>
-      <br />
-      <div class="row">
-        <div class="col-sm">
-          <img
-            src="https://c4.wallpaperflare.com/wallpaper/394/436/889/xbox-xbox-one-console-gamepad-wallpaper-thumb.jpg"
-          />
-        </div>
-
-        <div class="col-sm">
-          <p>
-            It all started long ago when I was first introduced to games. I
-            remember as if it was yesterday, I had gotten my first game system,
-            an xbox 360! The first game I played was "Sonic Free Riders", then
-            it was "Kinnect Adventures" (the console I got was a bundle so the
-            game came with it). Due to my fasination it led me to get a degree
-            in Game Development and through it my addiction for programming
-            grew. Now I'm in school to be a Software Developer!
-          </p>
         </div>
       </div>
-    </div>
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
   </body>
 </html>
