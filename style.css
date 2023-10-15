@@ -12,16 +12,16 @@
     
     color: whitesmoke;
     width: 80%;
-    height: 80%;
+    height: 100%;
    
 }
 
 .background-clip{
-    position: absolute;
+    position:absolute;
     right: 0;
-    bottom: 0;
+    bottom: -250px;
     z-index: -1;
-    height: 100%;
+    
 }
 
 input:hover{
@@ -47,7 +47,6 @@ img{
     }
     
     p{
-        color:aquamarine;
         padding-top: 15px;
     }
 
@@ -58,7 +57,7 @@ img{
 
 }
 
-@media screen and (min-width: 750px){
+@media only screen and (min-width: 750px){
     .container {
     
         color: whitesmoke;
@@ -76,7 +75,4 @@ img{
         width:auto;
     }
 
-    p{
-        color: pink;
-    }
 }
